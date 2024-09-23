@@ -1,0 +1,310 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('interior-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #2c3e50;
+    color: #fff;
+}
+
+.logo {
+    width: 80px; /* Increased logo width */
+    height: 80px; /* Increased logo height */
+    border-radius: 50%; /* Makes the logo circular */
+    overflow: hidden;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-title {
+    font-size: 24px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Welcome Container Styles */
+.welcome-container {
+    max-width: 700px;
+    margin: 100px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-container h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.welcome-container p {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.welcome-container button {
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    background: #e74c3c;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.welcome-container button:hover {
+    background-color: #3498db;
+    transform: scale(1.05);
+}
+
+/* Interior Sections Styles */
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.interior-sections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+/* Individual Section Styles */
+.section {
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.title-overlay {
+    background: #2c3e50;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.section img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* Auth Container Styles (Neat, Moderately Sized) */
+.auth-container {
+    width: 60%; /* Moderate width for a clean appearance */
+    max-width: 800px; /* Set a maximum width for larger screens */
+    padding: 40px; /* Generous padding for spacing inside the container */
+    margin: 80px auto; /* Center the container with vertical margin */
+    background: rgba(255, 255, 255, 0.9); /* Slightly opaque background for readability */
+    border-radius: 10px; /* Subtle rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow for a neat look */
+    text-align: center;
+}
+
+.auth-container h2 {
+    margin-bottom: 20px; /* Moderate spacing below the heading */
+    color: #2c3e50;
+    font-size: 28px; /* Slightly larger font size */
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space out form elements neatly */
+    align-items: center; /* Center align form elements */
+}
+
+.auth-container label {
+    font-size: 16px; /* Larger label font size for better readability */
+    align-self: flex-start; /* Align labels to the left */
+    margin-bottom: 5px;
+}
+
+.auth-container input {
+    width: 90%; /* Wide input fields for a clean look */
+    padding: 12px; /* Moderate padding for input fields */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Slightly rounded corners */
+    font-size: 16px;
+}
+
+.auth-container button {
+    width: 50%; /* Moderately wide button */
+    padding: 12px 20px; /* Increased button size */
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px; /* Subtle rounding */
+    cursor: pointer;
+    font-size: 18px; /* Larger font size for the button */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.auth-container button:hover {
+    background-color: #3498db;
+    transform: scale(1.05);
+}
+
+
+
+/* Dashboard Container Styles */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.dashboard-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.dashboard-container th, .dashboard-container td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.dashboard-container th {
+    background: #2c3e50;
+    color: #fff;
+}
+
+/* About Container Styles */
+.about-container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    padding: 20px;
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+}
+
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Popup Button Styles */
+.popup-content button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background: #e74c3c;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.popup-content button:hover {
+    background-color: #3498db;
+}

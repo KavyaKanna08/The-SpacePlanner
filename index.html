@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Design Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Company Logo">
+        </div>
+        <h1 class="header-title">The Space Planar</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Welcome Container -->
+        <div class="welcome-container">
+            <h2>Welcome to The Space Planar</h2>
+            <p>Your dream space is just a step away. Discover the latest trends and ideas in interior design.</p>
+            <button onclick="showPopup()">Login</button>
+            <button onclick="showPopup()">Register</button>
+        </div>
+
+        <!-- Interior Sections (Visible on scroll) -->
+        <div class="centered-container">
+            <div class="interior-sections">
+                <div class="section" onclick="showPopup()">
+                    <div class="title-overlay">Living Room</div>
+                    <img src="living-room.jpg" alt="Living Room">
+                </div>
+                <div class="section" onclick="showPopup()">
+                    <div class="title-overlay">Bedroom</div>
+                    <img src="bedroom.jpg" alt="Bedroom">
+                </div>
+                <div class="section" onclick="showPopup()">
+                    <div class="title-overlay">Dining</div>
+                    <img src="dining.jpg" alt="Dining">
+                </div>
+                <div class="section" onclick="showPopup()">
+                    <div class="title-overlay">Bathroom</div>
+                    <img src="bathroom.jpg" alt="Bathroom">
+                </div>
+                <div class="section" onclick="showPopup()">
+                    <div class="title-overlay">Kitchen</div>
+                    <img src="kitchen.jpg" alt="Kitchen">
+                </div>
+                <div class="section" onclick="showPopup()">
+                    <div class="title-overlay">Washing Area</div>
+                    <img src="washing-room.jpg" alt="Washing Area">
+                </div>
+                <div class="section" onclick="showPopup()">
+                    <div class="title-overlay">Balcony</div>
+                    <img src="balcony.jpg" alt="Balcony">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Popup for Login/Register -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Please Login or Register</h2>
+            <button onclick="redirectToLogin()">Login</button>
+            <button onclick="redirectToRegister()">Register</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Contact Us: 123-456-7890 | Email: info@interiordesignco.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
